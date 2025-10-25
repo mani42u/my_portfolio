@@ -18,7 +18,7 @@
       <nav>
         <h1>My Portfolio</h1>
 
-        <ul>
+        <ul class="menu">
           <li>
             <a href="#home">Home</a>
           </li>
@@ -35,6 +35,10 @@
             <a href="#contact">Contact</a>
           </li>
         </ul>
+
+          <span id="menu-bar" onclick="showMenu()"><i class="fa-solid fa-bars"></i></span>
+          <span id="close-btn" onclick="hideMenu()"><i class="fa-solid fa-xmark"></i></span>
+        
       </nav>
     </header>
 
@@ -149,8 +153,8 @@
     </section>
     <!-- contact me -->
     <section id="contact" class="contact section-spacing">
-      <h1>Contact Me</h1>
-      <div>
+      <h1 class="heading-title">Contact Me</h1>
+      <div class="contact-content">
         <p>
           If you'd like to collaborate and have any Questions, feel free to
           reach out!
@@ -171,17 +175,19 @@
             required
           />
           <textarea placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
+          <button type="submit" class="btn btn-dark">Send Message</button>
         </form>
       </div>
     </section>
+    <!-- Footer Section -->
     <footer>
       <p>&copy; 2025 Code with Mani. All Right Reserved.</p>
-      <div>
-        <a href="#"><i>linkedin</i></a>
-        <a href="#"><i>Github</i></a>
-        <a href="#"><i>Twitter</i></a>
+      <div class="social-link">
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
